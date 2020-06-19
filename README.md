@@ -3,11 +3,11 @@
 # Creating the Runtime
 ```
 virtualenv venv && source venv/bin/activate
-pip install --target package/python -r requirements.txt
+pip install --target package/python -r function/requirements.txt
 cd package/python
 zip -r9 ${OLDPWD}/function.zip .
 cd -
-zip -g function.zip lambda_function.py
+zip -g function.zip function/lambda_function.py
 ```
 
 # Submitting the Lambda
